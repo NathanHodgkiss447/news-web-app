@@ -7,6 +7,10 @@ export default makeStyles({
     margin: 0,
   },
 
+  image: {
+    marginLeft: 20,
+  },
+
   card: {
     display: "flex",
     flexDirection: "column",
@@ -17,6 +21,27 @@ export default makeStyles({
     padding: "10%",
     borderRadius: "10",
     color: "white",
+  },
+
+  infoContainer: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-around",
+  },
+
+  logoContainer: {
+    padding: "0 5%",
+    display: "flex",
+    justifyContent: "space-around",
+    alignItems: "center",
+    width: "100%",
+  },
+
+  alanLogo: {
+    height: "27vmin",
+    borderRadius: "15%",
+    padding: "0 5%",
+    margin: "3% 0",
   },
 
   infoCard: {

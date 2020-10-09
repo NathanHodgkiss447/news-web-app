@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
+import { Typography } from "@material-ui/core";
 import wordsToNumbers from "words-to-numbers";
 
 import NewsCards from "./components/NewsCards/NewsCards";
@@ -50,7 +51,28 @@ function App() {
 
   return (
     <div className="app">
-      <div className={classes.logoContainer}>
+      <div
+        className={classes.logoContainer}
+        style={{ justifyContent: "space-around" }}
+      >
+        {newsArticles.length ? (
+          <div className={classes.infoContainer}>
+            <div className={classes.card}>
+              <Typography variant="h5" component="h2">
+                Try saying: <br />
+                <br />
+                Open article number [4]
+              </Typography>
+            </div>
+            <div className={classes.card}>
+              <Typography variant="h5" component="h2">
+                Try saying: <br />
+                <br />
+                Go back
+              </Typography>
+            </div>
+          </div>
+        ) : null}
         <img
           src="https://www.industry.gov.au/sites/default/files/August%202018/image/news-placeholder-738.png"
           className={classes.alanLogo}
