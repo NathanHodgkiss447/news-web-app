@@ -1,5 +1,7 @@
-This project was built following a tutorial from JavaScript Mastery on YouTube.
+Live site: https://confident-payne-deb259.netlify.app/
 
+This project was built following a tutorial from JavaScript Mastery on YouTube.
+This project was deployed using netlify
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
